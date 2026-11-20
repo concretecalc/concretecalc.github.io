@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>콘크리트 균열 원인과 대책 — 건축콘크리트 허브</title>
+<meta name="description" content="콘크리트 균열 원인과 대책: 소성 수축, 건조 수축, 온도 균열, 구조 균열의 판정법과 배합, 양생, 줄눈, 철근 배치에 의한 예방법을 설명합니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">건</span><span><b>건축콘크리트 <span>허브</span></b><small>concretecalc.github.io/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">배합표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 건축콘크리트 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 균열</p>
+  <h1>콘크리트 균열 원인과 대책</h1>
+  <p class="lede">콘크리트에 균열이 생겼다는 말을 들으면 누구나 불안해진다. 그런데 모든 균열이 구조적으로 위험한 것은 아니다. 어떤 균열은 표면의 건조로 생긴 가벼운 것이고, 어떤 균열은 구조 안전을 위협하는 신호다. 중요한 것은 균열의 원인을 정확히 판정하는 것이다. 균열의 형태와 폭, 발생 시기, 위치를 읽으면 원인이 보이고, 원인이 보이면 대책도 보인다. 이 글은 현장에서 가장 흔한 균열 네 가지를 판정하는 방법과 예방 대책을 정리한 것이다.</p>
+
+  <h2>균열의 종류와 판정 방법</h2>
+  <p>소성 수축 균열은 타설 후 몇 시간 안에 생긴다. 콘크리트가 아직 굳기 전에 표면의 수분이 빠르게 증발하면 표면이 수축하면서 그물 모양의 균열이 생긴다. 여름철의 강한 햇빛과 바람이 주요 원인이며, 슬래브 표면에서 흔히 볼 수 있다. 균열 폭은 대개 0.1밀리미터 이하로 가늘고, 깊이가 얕다. 표면 마감 직후 양생을 시작하지 않았을 때 자주 발생하므로, 발생 시기와 표면 상태를 함께 보면 판정이 쉽다.</p>
+  <p>건조 수축 균열은 콘크리트가 굳은 뒤 수분이 빠져나가면서 수축해 생긴다. 타설 후 수일에서 수개월에 걸쳐 나타나며, 벽체와 슬래브의 모서리나 개구부 주변에서 직선 형태로 생기는 경우가 많다. 물-시멘트비가 높거나 시멘트량이 많을수록 수축량이 커진다. 양생이 부족하면 수축이 더 심해진다. 건조 수축 균열은 구조물의 움직임이 구속될 때 발생하므로, 구속 조건과 줄눈 간격을 함께 살펴야 한다.</p>
+  <p>온도 균열은 수화열이나 계절 온도 변화로 생긴다. 매스 콘크리트에서는 내부와 표면의 온도 차이가 커져 표면에 균열이 생기고, 겨울철에는 급격한 온도 하강이 원인이 된다. 구조 균열은 하중이나 지반 침하, 설계 오류로 생기며, 보의 하부에 휨 균열이 생기거나 기둥에 사인 균열이 나타나는 식이다. 구조 균열은 폭이 넓고 계속 진행되는 경향이 있어, 발견 즉시 구조 기술자의 검토가 필요하다. 균열 폭을 측정하고 시간 경과에 따라 폭이 넓어지는지 관찰하는 것이 판정의 첫걸음이다.</p>
+
+  <h2>균열 종류별 특징</h2>
+  <table>
+    <tr><th>균열 종류</th><th>발생 시기</th><th>주요 원인</th><th>형태와 폭</th></tr>
+    <tr><td>소성 수축 균열</td><td>타설 후 수 시간 이내</td><td>표면 수분 급격 증발</td><td>그물 모양, 0.1 mm 이하</td></tr>
+    <tr><td>건조 수축 균열</td><td>수일~수개월</td><td>수분 손실, 높은 물-시멘트비</td><td>직선형, 0.1~0.3 mm</td></tr>
+    <tr><td>온도 균열</td><td>타설 후 수일~수주</td><td>수화열, 온도 변화</td><td>관통형, 위치 불규칙</td></tr>
+    <tr><td>구조 균열</td><td>하중 작용 후</td><td>과하중, 침하, 설계 오류</td><td>휨·전단형, 0.3 mm 이상</td></tr>
+    <tr><td>침하 균열</td><td>타설 직후</td><td>철근·거푸집 구속, 블리딩</td><td>철근 따라 직선형</td></tr>
+  </table>
+
+  <h2>배합과 양생으로 균열을 예방하는 방법</h2>
+  <p>균열 예방의 출발점은 배합이다. 물-시멘트비를 설계값대로 지키고, 현장에서 물을 추가하지 않는 것이 기본이다. 물이 많아지면 수축량이 커지고 강도가 떨어져 균열이 늘어난다. 단위 시멘트량을 필요 이상으로 늘리는 것도 수축을 키우므로, 설계기준강도에 맞는 최소 시멘트량을 사용한다. 골재는 입도가 양호하고 깨끗한 것을 사용하고, 잔골재율이 과도하면 수축이 커지므로 배합설계서를 확인한다. 수축 저감제나 팽창재를 사용하는 경우에는 사전 시험으로 효과를 확인한 뒤 적용한다.</p>
+  <p>양생은 배합만큼 중요하다. 타설 직후 표면이 마르기 전에 양생을 시작하고, 습윤 양생을 7일 이상 유지한다. 여름철에는 살수 빈도를 늘리고 차광막으로 직사광선을 막으며, 겨울철에는 보온 양생으로 온도 변화를 완화한다. 양생이 제대로 되면 건조 수축이 줄고 표면 강도가 높아져 균열이 잘 생기지 않는다. 양생은 비용이 적게 들면서 효과가 큰 균열 대책이다. 현장에서 양생을 소홀히 하는 것은 균열을 직접 만드는 일과 같다.</p>
+  <p>줄눈은 균열의 위치를 미리 정해주는 장치다. 수축 줄눈은 콘크리트가 수축할 때 균열이 줄눈 위치에서 생기도록 유도해, 눈에 띄지 않는 곳으로 균열을 모은다. 슬래브에서는 줄눈 간격을 3~6미터로 하고, 벽체에서는 개구부 주변과 길이 방향으로 줄눈을 설치한다. 줄눈 깊이는 부재 두께의 4분의 1 이상으로 하고, 줄눈 위치는 철근이 끊기지 않도록 설계한다. 줄눈이 없거나 간격이 너무 넓으면 균열이 임의의 위치에서 생긴다.</p>
+
+  <h2>철근 배치와 시공상의 대책</h2>
+  <p>철근은 균열을 완전히 막지는 못하지만 균열 폭을 줄이고 균열을 분산시키는 역할을 한다. 온도 철근과 수축 철근을 설계대로 배치하고, 특히 슬래브 모서리와 개구부 주변에는 보강 철근을 추가한다. 피복두께가 부족하면 철근 부식으로 인한 균열이 생기므로 스페이서로 피복두께를 확보한다. 철근 간격이 너무 넓으면 균열 폭이 커지므로, 배근 간격을 설계대로 지키는 것이 중요하다. 타설 중 철근이 밀리면 피복두께가 달라지므로, 타설 중에도 철근 위치를 점검해야 한다.</p>
+  <p>시공 순서도 균열에 영향을 준다. 거푸집을 조기에 해체하면 콘크리트가 아직 약한 상태에서 하중을 받아 균열이 생긴다. 동바리는 설계 강도에 도달한 뒤 해체하고, 상부 층 타설 하중을 고려해 존치 기간을 정한다. 지반 침하가 예상되는 곳에서는 기초의 부동침하를 막기 위해 지반을 다지고, 구조물의 하중이 고르게 전달되도록 한다. 타설 이음부는 계획된 위치에 시공줄눈을 설치하고, 이음면을 깨끗이 정리한 뒤 타설해야 한다. 이음부의 처리가 나쁘면 그곳이 균열의 시작점이 된다.</p>
+  <p>이미 생긴 균열은 원인을 판정한 뒤 보수 방법을 정한다. 폭이 0.2밀리미터 이하의 미세한 표면 균열은 표면 처리나 침투성 보수재로 대응할 수 있다. 폭이 넓거나 누수가 있는 균열은 에폭시 주입이나 그라우트 주입으로 보수하고, 구조 균열은 구조 기술자의 검토를 받아 보강 여부를 결정한다. 균열을 보수재로 덮기만 하고 원인을 방치하면 같은 위치에서 다시 균열이 생긴다. 보수 전에는 반드시 균열 폭의 진행 여부를 측정하고, 진행성 균열인지 안정된 균열인지 구분해야 한다.</p>
+
+  <h2>균열과 누수, 내구성의 관계</h2>
+  <p>균열은 그 자체로도 문제지만, 균열을 통해 물과 염분이 들어오면 문제는 더 커진다. 물이 균열을 따라 철근까지 도달하면 철근이 녹슬기 시작하고, 녹슨 철근은 부피가 팽창하면서 콘크리트를 안쪽에서 밀어내 균열을 더 넓힌다. 이렇게 되면 균열은 더 넓어지고, 더 많은 물이 들어오는 악순환이 반복된다. 지하 구조물이나 물탱크처럼 수밀성이 중요한 구조물에서는 작은 균열 하나가 누수로 이어져 사용에 큰 지장을 준다. 균열을 단순히 외관의 문제로 보아서는 안 되는 이유가 바로 여기에 있다.</p>
+  <p>내구성 측면에서 균열 관리의 핵심은 균열 폭을 작게 유지하고, 균열이 생기더라도 물이 들어오지 않도록 막는 것이다. 피복두께를 확보하면 물이 철근에 도달하는 시간이 길어지고, 수밀 콘크리트를 사용하면 균열 자체의 투수성이 낮아진다. 균열이 생긴 뒤에는 조기에 보수해 물의 침투를 차단해야 한다. 균열을 방치하면 보수 비용은 시간이 지날수록 커진다. 균열 예방은 구조물의 수명을 늘리는 가장 경제적인 투자이며, 설계 단계부터 시공과 유지관리까지 이어지는 장기적인 관점에서 접근해야 한다.</p>
+
+  <h2>균열 조사와 예방 단계별 절차</h2>
+  <ol>
+    <li><strong>균열을 기록한다.</strong> 균열의 위치, 길이, 폭, 방향, 발생 시기를 사진과 함께 기록하고, 균열도를 작성한다.</li>
+    <li><strong>균열 폭을 측정한다.</strong> 균열 게이지로 폭을 측정하고, 표시를 해 두어 시간 경과에 따라 폭이 넓어지는지 관찰한다.</li>
+    <li><strong>발생 시기와 형태를 판정한다.</strong> 타설 후 경과 시간과 균열 형태를 대조해 소성 수축, 건조 수축, 온도, 구조 균열 중 어느 것인지 판정한다.</li>
+    <li><strong>원인을 확인한다.</strong> 배합 기록, 양생 기록, 타설 기록, 설계도서를 확인해 물-시멘트비, 양생 상태, 줄눈 간격, 하중 조건을 검토한다.</li>
+    <li><strong>진행성을 판단한다.</strong> 일정 기간 폭을 관찰해 진행성 균열이면 구조 기술자에게 검토를 의뢰하고, 안정된 균열이면 보수 계획을 세운다.</li>
+    <li><strong>보수 방법을 정한다.</strong> 균열 폭과 누수 여부, 구조적 중요도에 따라 표면 처리, 에폭시 주입, 그라우트 주입, 보강 중 적절한 방법을 선택한다.</li>
+    <li><strong>보수 후 경과를 관찰한다.</strong> 보수한 부위의 균열이 다시 생기는지 관찰하고, 재발하면 원인을 다시 검토한다.</li>
+    <li><strong>다음 공정에 예방 대책을 반영한다.</strong> 배합 조정, 양생 강화, 줄눈 간격 조정, 철근 보강 등 원인을 제거하는 대책을 다음 타설에 적용한다.</li>
+  </ol>
+
+  <h2>흔한 실수</h2>
+  <ul>
+    <li><strong>현장 가수:</strong> 물을 추가하면 수축량이 커져 균열이 늘어난다. 슬럼프가 맞지 않으면 반품하는 것이 원칙이다.</li>
+    <li><strong>양생 생략:</strong> 표면이 마른 채로 방치하면 건조 수축 균열이 반드시 생긴다. 마감 직후 즉시 양생해야 한다.</li>
+    <li><strong>줄눈 간격 과다:</strong> 줄눈이 없거나 간격이 넓으면 균열이 임의의 위치에서 생긴다. 설계된 간격을 지켜야 한다.</li>
+    <li><strong>조기 거푸집 해체:</strong> 강도가 오르기 전에 하중을 받으면 균열이 생긴다. 동바리 존치 기간을 지켜야 한다.</li>
+    <li><strong>원인 없는 보수:</strong> 균열만 메우고 원인을 방치하면 같은 곳에서 다시 균열이 생긴다. 보수 전에 원인을 먼저 판정해야 한다.</li>
+  </ul>
+
+  <h2>현장 실무 팁</h2>
+  <p>균열을 발견하면 먼저 폭과 길이를 재어 기록한다. 폭은 균열 게이지나 자로 재고, 끝부분에 날짜와 폭을 직접 표시해 두면 진행 여부를 쉽게 확인할 수 있다. 사진으로 남길 때는 자를 함께 찍어 크기를 알 수 있게 한다. 균열이 보나 기둥에 생겼거나, 바닥 전체에 거미줄처럼 퍼져 있는 경우에는 보수보다 구조 검토를 먼저 받아야 한다. 표면의 미세한 균열과 구조 균열은 대응이 완전히 다르기 때문이다.</p>
+  <p>계절에 따라 균열 대책도 달라진다. 여름에는 타설 후 표면이 마르기 전에 양생포를 덮고, 바람이 센 날에는 표면을 자주 적셔 준다. 겨울에는 타설 직후 보온포를 덮어 온도 저하를 막고, 동결 전에 충분히 강도가 나오도록 양생 기간을 늘린다. 이미 생긴 균열은 폭이 0.3밀리미터 이하이고 진행이 멈췄다면 표면 처리나 주입으로 보수할 수 있지만, 계속 넓어지는 균열은 원인을 먼저 찾아야 한다.</p>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>머리카락처럼 가는 균열은 위험한가요?</h3>
+  <p>폭이 0.1밀리미터 이하의 미세한 균열은 대부분 표면의 건조 수축으로 생긴 것으로, 구조적으로 큰 문제는 없는 경우가 많다. 다만 누수가 우려되는 부위나 외관이 중요한 부위에서는 표면 처리로 보수하는 것이 좋다. 폭이 시간에 따라 넓어지는지 관찰하는 것이 중요하다.</p>
+  <h3>균열 폭이 어느 정도면 구조 검토가 필요한가요?</h3>
+  <p>일반적으로 폭이 0.3밀리미터를 넘는 균열이나, 보와 기둥 같은 주요 구조 부재에 생긴 균열, 계속 진행되는 균열은 구조 기술자의 검토가 필요하다. 철근이 노출되거나 누수가 동반되는 경우도 즉시 검토해야 한다. 판정이 어려우면 보수보다 검토를 먼저 받는 것이 안전하다.</p>
+  <h3>균열이 생긴 콘크리트를 에폭시로 주입하면 강도가 회복되나요?</h3>
+  <p>에폭시 주입은 균열을 메워 일체화하고 누수를 막는 효과가 있지만, 구조 균열의 원인이 하중이나 침하에 있다면 주입만으로 문제가 해결되지 않는다. 구조 균열은 원인 제거와 보강이 함께 이루어져야 한다. 주입 전에 균열의 진행성을 먼저 확인해야 한다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 균열 조사를 위해 고소 작업이나 지하 구조물 내부에 들어갈 때는 추락과 질식 위험에 주의한다. 구조 균열이 의심되는 부재 아래에서는 하중을 가하지 말고, 보강이 완료되기 전에는 해당 구역의 출입을 통제한다. 균열 보수용 에폭시와 화학 약품은 장갑과 보안경을 착용하고 취급한다.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-mix">콘크리트 배합비 계산기</a> — 물-시멘트비와 강도별 배합을 확인합니다</li>
+      <li><a href="../index.html#calc-volume">콘크리트 소요량 계산기</a> — 타설 체적과 주문량을 계산합니다</li>
+      <li><a href="../index.html#calc-rebar">철근 중량 계산기</a> — 균열 제어를 위한 철근량을 확인합니다</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>건축콘크리트 허브</h4>
+        <p>무료 콘크리트 계산기와 실무 가이드를 제공하는 사이트입니다. KS F 4009 · KCS 기준 · 60Hz.</p>
+        <p style="margin-top:8px">concretecalc.github.io/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-volume">콘크리트 소요량</a></li>
+          <li><a href="../index.html#calc-rebar">철근 중량</a></li>
+          <li><a href="../index.html#calc-formwork">거푸집 면적</a></li>
+          <li><a href="../index.html#calc-mix">콘크리트 배합비</a></li>
+          <li><a href="../index.html#calc-cost">타설 비용 산정</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="concrete-pouring-basics.html">콘크리트 타설의 기초</a></li>
+          <li><a href="curing-management.html">콘크리트 양생 관리</a></li>
+          <li><a href="crack-prevention.html">콘크리트 균열 원인과 대책</a></li>
+          <li><a href="rebar-placement.html">철근 배근 실무</a></li>
+          <li><a href="formwork-construction.html">거푸집 시공 실무</a></li>
+          <li><a href="concrete-strength-test.html">콘크리트 강도 시험</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 건축콘크리트 허브 · 모든 계산은 브라우저 안에서 수행됩니다 · 결과는 추정치이므로 설계도서와 기준에 따라 확인하세요.</div>
+  </div>
+</footer>
+
+</body>
+</html>

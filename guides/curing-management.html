@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>콘크리트 양생 관리 — 건축콘크리트 허브</title>
+<meta name="description" content="콘크리트 양생 관리: 습윤 양생, 살수 주기, 보온 양생, 한중 콘크리트와 서중 콘크리트의 온도 관리, 거푸집 존치 기간을 설명합니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">건</span><span><b>건축콘크리트 <span>허브</span></b><small>concretecalc.github.io/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">배합표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 건축콘크리트 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 양생</p>
+  <h1>콘크리트 양생 관리</h1>
+  <p class="lede">콘크리트는 타설이 끝난 뒤에도 계속 일하고 있다. 시멘트와 물이 반응하는 수화 작용은 며칠, 몇 주에 걸쳐 진행되며, 이 과정에서 콘크리트는 설계 강도를 얻는다. 그런데 수분이 부족하거나 온도가 너무 낮으면 수화 작용이 멈추고, 강도는 설계값에 도달하지 못한다. 양생은 바로 이 수화 작용이 끝까지 이어지도록 수분과 온도를 지켜주는 관리다. 양생을 소홀히 한 콘크리트는 겉보기에는 멀쩡해도 속은 약한 구조물이 된다.</p>
+
+  <h2>양생이 강도를 결정하는 이유</h2>
+  <p>시멘트가 물과 만나면 수화물이 생성되면서 입자 사이를 채우고 굳어진다. 이 반응에는 물이 필요하고, 물이 조기에 증발하면 반응이 중단된다. 표면이 마른 콘크리트는 표면층의 강도가 크게 떨어지고, 건조 수축 균열이 생기기 쉽다. 특히 슬래브처럼 표면적이 넓은 부재는 타설 직후부터 수분 증발이 빠르게 일어나므로 마감 직후 즉시 양생을 시작해야 한다. 양생이 늦어지면 이미 표면은 건조 수축을 시작하고, 그 뒤에 물을 뿌려도 되돌릴 수 없다.</p>
+  <p>온도도 수화 속도를 좌우한다. 기온이 높으면 수화가 빨라지지만 수분 증발도 빨라지고, 기온이 낮으면 수화가 느려져 초기 강도 발현이 늦어진다. 영하의 기온에서는 콘크리트 속의 물이 얼어 수화 작용이 멈추고, 얼음이 녹으면서 내부에 공극이 남는다. 양생의 목표는 간단하다. 콘크리트가 충분한 강도를 얻을 때까지 수분을 유지하고, 온도를 적정 범위에 두는 것이다. 이 두 가지만 지켜도 양생의 대부분은 성공한 셈이다.</p>
+  <p>양생 기간은 설계기준강도와 부재의 중요도, 계절에 따라 달라진다. 일반적인 기준은 습윤 양생 7일 이상이며, 고강도 콘크리트나 수밀성이 중요한 구조물에서는 14일 이상 양생하는 경우도 있다. 거푸집 존치 기간은 양생 기간과 다르다. 거푸집은 콘크리트가 자중과 시공 하중을 견딜 수 있는 강도에 도달했을 때 해체한다. 슬래브 아래의 동바리는 거푸집보다 더 오래 존치해야 하며, 상부 층의 타설 하중까지 고려해 해체 시기를 정해야 한다.</p>
+
+  <h2>습윤 양생의 방법과 살수 요령</h2>
+  <p>습윤 양생은 콘크리트 표면을 계속 젖은 상태로 유지하는 방법이다. 가장 기본적인 방법은 살수다. 표면이 마르기 전에 물을 뿌리고, 양생포나 부직포를 덮어 수분을 오래 유지한다. 양생포는 물을 머금어 표면에 지속적으로 수분을 공급하므로, 단순히 물을 뿌리는 것보다 효과적이다. 연못 양생은 슬래브 주변에 둑을 만들어 물을 가두는 방법으로, 넓은 슬래브에 효과적이다. 양생제를 표면에 도포해 수분 증발을 막는 방법도 있으며, 물 사용이 어려운 현장이나 수직면에서 많이 사용한다.</p>
+  <p>양생포는 바람에 날리지 않도록 모서리를 고정하고, 살수 후에는 포 아래에 물이 고여 있는지 확인한다. 양생포가 마르면 수분 공급이 끊기므로, 여름철에는 하루에 세 번 이상 포의 상태를 점검하는 것이 좋다. 양생제는 도포 두께가 균일해야 효과가 나타나며, 너무 얇게 바르면 수분 증발을 막지 못한다. 양생 방법을 바꿀 때는 현장 조건과 부재의 중요도를 함께 고려해야 한다.</p>
+  <p>살수 주기는 계절과 날씨에 따라 조정한다. 여름철에는 표면이 빠르게 마르므로 하루에 여러 번 살수하고, 양생포가 마르지 않도록 수시로 확인한다. 겨울철에는 살수한 물이 얼지 않도록 주의하고, 보온 양생과 함께 관리한다. 살수는 표면 온도를 급격히 바꾸지 않도록 하고, 차가운 물을 뜨거운 표면에 한꺼번에 붓는 것은 피한다. 온도 충격은 표면 균열의 원인이 될 수 있다. 양생 중에는 표면 위를 걷거나 하중을 가하지 않고, 양생포가 바람에 날리지 않도록 고정해야 한다.</p>
+  <p>수직면의 양생도 소홀히 해서는 안 된다. 벽체와 기둥은 거푸집이 있는 동안 거푸집 자체가 수분 증발을 막아주므로, 거푸집을 조기에 해체하지 않는 것이 양생에 도움이 된다. 거푸집을 해체한 뒤에는 즉시 양생제를 도포하거나 젖은 포를 감아 표면을 보호한다. 보와 슬래브의 하면도 거푸집 해체 후 노출되므로, 해체 시기가 양생 기간과 겹치지 않도록 일정을 조정해야 한다.</p>
+
+  <h2>계절별 양생 기준</h2>
+  <table>
+    <tr><th>구분</th><th>습윤 양생 기간</th><th>주의 사항</th><th>양생 방법</th></tr>
+    <tr><td>일반기 (봄·가을)</td><td>7일 이상</td><td>표면 건조 방지</td><td>살수 + 양생포</td></tr>
+    <tr><td>서중기 (여름)</td><td>7일 이상</td><td>급격한 수분 증발, 수화열</td><td>살수 빈도 증가, 차광</td></tr>
+    <tr><td>한중기 (겨울)</td><td>7일 이상 + 보온</td><td>동결 방지, 초기 강도 지연</td><td>보온포, 가열 양생</td></tr>
+    <tr><td>고강도 콘크리트</td><td>14일 이상</td><td>자기 수축, 표면 균열</td><td>장기 습윤 양생</td></tr>
+    <tr><td>수밀 구조물</td><td>14일 이상</td><td>수밀성 확보</td><td>연못 양생 권장</td></tr>
+  </table>
+
+  <h2>한중 콘크리트와 서중 콘크리트의 양생</h2>
+  <p>한중 콘크리트는 일평균 기온이 4도 이하인 시기에 타설하는 콘크리트를 말한다. 이 시기에는 콘크리트가 동결되지 않도록 보온 양생이 필수다. 타설 전에 거푸집과 철근, 지반의 눈과 얼음을 제거하고, 레미콘의 온도를 확인한다. 타설 후에는 보온포나 단열재로 표면을 덮고, 필요하면 가열 양생을 병행한다. 가열 양생에서는 콘크리트 표면이 과열되지 않도록 하고, 온도가 급격히 떨어지지 않도록 서서히 식힌다. 동결된 콘크리트는 강도가 회복되지 않으므로, 동결 방지는 한중 양생의 가장 중요한 목표다.</p>
+  <p>서중 콘크리트는 기온이 30도를 넘는 시기에 타설하는 콘크리트를 말한다. 여름철에는 수분 증발이 빠르고 응결이 빨라져 작업 시간이 짧아진다. 타설은 기온이 낮은 이른 아침이나 저녁에 하고, 레미콘의 온도를 낮추기 위해 골재와 물의 온도를 관리한다. 타설 후에는 즉시 양생포를 덮고 살수를 자주 하며, 직사광선을 막기 위해 차광막을 설치하기도 한다. 수화열이 큰 매스 콘크리트에서는 내부 온도와 표면 온도의 차이가 커져 온도 균열이 생길 수 있으므로, 온도 관리 계획을 별도로 세워야 한다.</p>
+  <p>계절과 관계없이 양생 기록을 남기는 습관이 중요하다. 양생 시작 시간, 살수 횟수, 기온과 습도, 사용한 양생 자재, 거푸집 해체일을 기록하면 나중에 강도 문제가 생겼을 때 원인을 추적할 수 있다. 양생은 눈에 잘 띄지 않는 작업이라 소홀해지기 쉽지만, 기록이 있는 현장은 양생이 제대로 이루어질 확률이 높다. 감리자도 양생 기록을 확인하므로, 기록 자체가 품질 관리의 증거가 된다.</p>
+
+  <h2>양생 불량 사례와 교훈</h2>
+  <p>양생이 부족했던 현장에서는 비슷한 문제가 반복된다. 여름철에 슬래브 타설 후 양생포를 덮지 않고 방치한 현장에서는 타설 당일 오후에 표면 전체에 그물 모양의 균열이 생겼고, 그 균열은 이후 보수재로 메웠지만 표면 강도는 회복되지 않았다. 겨울철에 보온 없이 타설한 기초에서는 콘크리트가 얼어 초기 강도가 거의 나오지 않았고, 결국 해당 부위를 철거하고 다시 타설해야 했다. 두 사례 모두 양생에 들어간 비용보다 훨씬 큰 손실을 낳았다. 양생은 비용이 적게 드는 작업이지만, 소홀히 하면 가장 비싼 대가를 치르는 작업이다.</p>
+  <p>반대로 양생을 철저히 한 현장은 강도 시험 결과가 안정적이고, 표면 품질도 균일하게 나온다. 양생 담당자를 따로 정해 살수 시간과 양생포 상태를 점검하게 하고, 감리자가 양생 기록을 매일 확인하는 현장은 양생 불량이 거의 생기지 않는다. 양생은 기술보다 관리의 문제에 가깝다. 누가, 언제, 어떻게 양생하는지를 정해두고 기록으로 남기면, 양생은 현장의 습관이 된다. 콘크리트 품질의 절반은 배합과 타설이 결정하고, 나머지 절반은 양생이 결정한다는 말을 현장에서 되새길 필요가 있다.</p>
+
+  <h2>양생 관리 단계별 절차</h2>
+  <ol>
+    <li><strong>마감 직후 양생을 시작한다.</strong> 표면이 마르기 전에 양생포를 덮거나 양생제를 도포한다. 양생 시작이 늦어질수록 표면 품질은 떨어진다.</li>
+    <li><strong>표면을 계속 습윤 상태로 유지한다.</strong> 양생포가 마르지 않도록 살수하고, 연못 양생에서는 수위를 유지한다. 표면이 마른 채로 방치하지 않는다.</li>
+    <li><strong>기온을 측정하고 기록한다.</strong> 일평균 기온과 콘크리트 온도를 매일 기록하고, 한중과 서중 기준에 따라 양생 방법을 조정한다.</li>
+    <li><strong>한중기에는 보온 양생을 병행한다.</strong> 보온포와 단열재로 표면을 덮고, 필요하면 가열 양생을 하며, 동결 여부를 매일 확인한다.</li>
+    <li><strong>서중기에는 살수 빈도를 늘린다.</strong> 표면이 마르기 전에 살수하고, 직사광선을 막기 위해 차광막을 설치한다.</li>
+    <li><strong>양생 기간을 지켜 거푸집을 해체한다.</strong> 설계 강도에 도달했는지 확인한 뒤 거푸집을 해체하고, 동바리는 더 오래 존치한다.</li>
+    <li><strong>해체 후 노출면을 다시 양생한다.</strong> 거푸집을 해체한 뒤 노출된 표면은 양생제를 도포하거나 젖은 포로 보호한다.</li>
+    <li><strong>양생 기록을 정리한다.</strong> 양생 기간, 살수 횟수, 기온, 해체일을 기록하고 감리자에게 제출한다.</li>
+  </ol>
+
+  <h2>흔한 실수</h2>
+  <ul>
+    <li><strong>양생 시작 지연:</strong> 마감 후 몇 시간이 지나서 양생을 시작하면 표면은 이미 건조 수축을 시작한 뒤다. 마감 직후 즉시 시작해야 한다.</li>
+    <li><strong>간헐적 살수:</strong> 표면이 마르고 젖기를 반복하면 균열이 생긴다. 표면을 계속 젖은 상태로 유지하는 것이 핵심이다.</li>
+    <li><strong>조기 거푸집 해체:</strong> 강도가 충분히 오르기 전에 거푸집을 해체하면 처짐과 균열이 생기고, 양생 효과도 사라진다.</li>
+    <li><strong>한중기 동결 방치:</strong> 보온 없이 타설한 콘크리트가 얼면 강도가 회복되지 않는다. 보온 양생은 선택이 아니라 필수다.</li>
+    <li><strong>양생제 과신:</strong> 양생제는 수분 증발을 줄여주지만 살수를 완전히 대신하지는 못한다. 중요한 부재에서는 습윤 양생을 병행한다.</li>
+  </ul>
+
+  <h2>현장 실무 팁</h2>
+  <p>양생은 마감 직후 바로 시작하는 것이 원칙이다. 표면 마감이 끝나면 지체하지 말고 양생포나 살수로 수분 증발을 막아야 한다. 양생 시작이 늦어지면 표면부터 마르기 시작해 강도와 내구성이 떨어진다. 살수를 할 때는 강한 물줄기로 표면을 때리지 말고, 가볍게 뿌려 표면이 항상 젖어 있도록 유지한다. 물이 고인 상태로 오래 두면 표면이 약해질 수 있으므로, 고인 물은 빼주는 것이 좋다.</p>
+  <p>양생 기간을 단축하면 안 된다. 설계에서 요구하는 양생 기간은 강도를 확보하기 위한 최소 조건이며, 공기를 맞추기 위해 양생을 줄이면 장기적으로 균열과 강도 부족이 생긴다. 특히 슬래브 상부에 다음 층의 자재를 올릴 때는 양생이 끝났는지 강도 시험으로 확인한 뒤 하중을 가해야 한다. 양생 기록은 날짜와 방법, 기온을 함께 남겨 두면 품질 관리 자료로 활용할 수 있다.</p>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>양생포를 덮으면 살수를 하지 않아도 되나요?</h3>
+  <p>양생포는 수분을 오래 유지해주지만, 포 자체가 마르면 효과가 사라진다. 양생포가 항상 젖은 상태인지 확인하고, 마르면 살수해야 한다. 특히 여름철에는 양생포가 빠르게 마르므로 하루에 여러 번 확인하는 것이 좋다.</p>
+  <h3>겨울철에 물을 뿌리면 얼지 않나요?</h3>
+  <p>기온이 영하에 가까운 날에는 살수한 물이 얼어 오히려 해가 될 수 있다. 한중기에는 살수보다 보온포와 단열재를 이용한 보온 양생이 우선이며, 살수는 기온이 오른 낮 시간에 제한적으로 실시한다. 가열 양생을 병행하는 경우에는 표면 온도를 일정하게 유지하는 것이 중요하다.</p>
+  <h3>거푸집을 오래 두면 양생이 더 잘되나요?</h3>
+  <p>거푸집은 수분 증발을 막아 양생에 도움이 되지만, 거푸집을 존치하는 것만으로 양생이 끝나는 것은 아니다. 거푸집 해체 후에도 노출면의 양생이 필요하며, 양생 기간 자체를 충분히 확보해야 한다. 거푸집 존치 기간과 양생 기간을 구분해서 관리해야 한다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 겨울철 가열 양생에서는 화기 사용 시 화재와 일산화탄소 중독에 주의하고, 환기를 확보해야 한다. 보온포와 가열기는 가연성 자재와 떨어뜨려 설치한다. 양생 작업 중 젖은 표면에서는 미끄러짐 사고가 잦으므로 안전화를 착용하고 이동 통로를 확보한다.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-volume">콘크리트 소요량 계산기</a> — 타설 체적과 주문량을 계산합니다</li>
+      <li><a href="../index.html#calc-mix">콘크리트 배합비 계산기</a> — 강도별 배합과 물-시멘트비를 확인합니다</li>
+      <li><a href="../index.html#calc-formwork">거푸집 면적 계산기</a> — 거푸집 존치와 해체 계획에 활용합니다</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>건축콘크리트 허브</h4>
+        <p>무료 콘크리트 계산기와 실무 가이드를 제공하는 사이트입니다. KS F 4009 · KCS 기준 · 60Hz.</p>
+        <p style="margin-top:8px">concretecalc.github.io/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-volume">콘크리트 소요량</a></li>
+          <li><a href="../index.html#calc-rebar">철근 중량</a></li>
+          <li><a href="../index.html#calc-formwork">거푸집 면적</a></li>
+          <li><a href="../index.html#calc-mix">콘크리트 배합비</a></li>
+          <li><a href="../index.html#calc-cost">타설 비용 산정</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="concrete-pouring-basics.html">콘크리트 타설의 기초</a></li>
+          <li><a href="curing-management.html">콘크리트 양생 관리</a></li>
+          <li><a href="crack-prevention.html">콘크리트 균열 원인과 대책</a></li>
+          <li><a href="rebar-placement.html">철근 배근 실무</a></li>
+          <li><a href="formwork-construction.html">거푸집 시공 실무</a></li>
+          <li><a href="concrete-strength-test.html">콘크리트 강도 시험</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 건축콘크리트 허브 · 모든 계산은 브라우저 안에서 수행됩니다 · 결과는 추정치이므로 설계도서와 기준에 따라 확인하세요.</div>
+  </div>
+</footer>
+
+</body>
+</html>

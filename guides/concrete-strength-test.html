@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>콘크리트 강도 시험 — 건축콘크리트 허브</title>
+<meta name="description" content="콘크리트 강도 시험: 압축강도 시험과 슬럼프 시험의 공시체 제작, 양생, 시험 시기, 판정 기준, 불합격 시 대응 절차를 설명합니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">건</span><span><b>건축콘크리트 <span>허브</span></b><small>concretecalc.github.io/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">배합표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 건축콘크리트 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 시험</p>
+  <h1>콘크리트 강도 시험</h1>
+  <p class="lede">콘크리트의 품질은 눈으로 확인할 수 없다. 타설된 콘크리트가 설계 강도를 냈는지 알려면 시험을 해야 한다. 압축강도 시험과 슬럼프 시험은 콘크리트 품질 관리의 가장 기본적인 검사로, 현장에서 매일 이루어진다. 시험 방법이 잘못되면 결과가 왜곡되고, 좋은 콘크리트가 불합격 판정을 받거나 나쁜 콘크리트가 합격 판정을 받을 수 있다. 정확한 시험은 정확한 품질 관리의 출발점이다.</p>
+
+  <h2>슬럼프 시험: 굳지 않은 콘크리트의 검사</h2>
+  <p>슬럼프 시험은 굳지 않은 콘크리트의 유동성과 작업성을 측정하는 시험이다. 슬럼프 콘을 콘크리트로 채우고 콘을 들어 올렸을 때 콘크리트가 주저앉는 높이를 측정한다. 슬럼프가 크면 유동성이 커서 작업이 쉽지만, 물이 많거나 재료 분리가 생겼을 수 있다. 슬럼프가 작으면 다짐이 어려워 공극이 생기기 쉽다. 설계된 슬럼프 범위를 벗어난 콘크리트는 품질이 의심되므로, 시험 결과를 보고 합격 여부를 판단한다.</p>
+  <p>슬럼프 시험은 레미콘 차량마다 실시하는 것이 원칙이다. 시료는 차량에서 배출되는 콘크리트의 중간 부분에서 채취하고, 시험은 채취 후 신속하게 실시한다. 콘을 채울 때는 세 층으로 나누어 각 층을 25회씩 다짐봉으로 찔러 다진다. 콘을 들어 올릴 때는 수직으로 천천히 들어 올리고, 콘크리트가 한쪽으로 무너지면 시험을 다시 해야 한다. 슬럼프 값은 콘의 높이와 주저앉은 콘크리트 높이의 차이로 측정한다. 시험 결과는 타설 기록에 남기고, 불합격 차량은 반품한다.</p>
+  <p>슬럼프 시험에서 가장 흔한 오류는 현장 가수다. 슬럼프가 작다고 현장에서 물을 추가하면 슬럼프는 커지지만 강도는 떨어진다. 물이 추가된 콘크리트는 설계된 물-시멘트비를 벗어나므로, 슬럼프가 기준에 맞지 않으면 물을 추가하는 대신 레미콘을 반품하고 공장에 배합을 확인하도록 통보해야 한다. 공기량 시험도 함께 실시하는 경우가 많다. 공기량은 콘크리트 속의 공기량을 측정하는 것으로, 동결융해 저항성과 관련이 있다. 공기량이 기준을 벗어나면 내구성이 떨어지므로 함께 확인한다.</p>
+
+  <h2>시험 종류별 기준</h2>
+  <table>
+    <tr><th>시험 항목</th><th>시험 시기</th><th>판정 기준</th><th>비고</th></tr>
+    <tr><td>슬럼프 시험</td><td>차량마다, 타설 전</td><td>설계 슬럼프 ±2.5 cm</td><td>불합격 시 반품</td></tr>
+    <tr><td>공기량 시험</td><td>차량마다</td><td>설계 공기량 ±1.5%</td><td>동결융해 저항성</td></tr>
+    <tr><td>압축강도 (7일)</td><td>재령 7일</td><td>설계강도의 70% 이상</td><td>조기 강도 확인</td></tr>
+    <tr><td>압축강도 (28일)</td><td>재령 28일</td><td>설계기준강도 이상</td><td>최종 판정</td></tr>
+    <tr><td>코어 채취 시험</td><td>불합격 시</td><td>설계강도의 85% 이상</td><td>구조물 직접 확인</td></tr>
+  </table>
+
+  <h2>압축강도 시험: 공시체 제작과 양생</h2>
+  <p>압축강도 시험은 원주형 공시체를 만들어 정해진 재령에 압축 시험기로 눌러 강도를 측정하는 시험이다. 공시체는 타설한 콘크리트와 같은 조건에서 채취해야 한다. 공시체 몰드에 콘크리트를 세 층으로 나누어 채우고, 각 층을 다짐봉으로 25회씩 찔러 다진다. 표면을 평평하게 마감하고, 공시체에 타설 부위와 날짜, 차량 번호를 표시한다. 공시체 제작이 부실하면 시험 결과가 실제 강도보다 낮게 나와, 좋은 콘크리트가 불합격 판정을 받을 수 있다.</p>
+  <p>공시체는 표준 양생을 해야 한다. 타설 후 하루 동안 현장에서 양생한 뒤 몰드를 탈형하고, 수조나 습도 95퍼센트 이상의 양생실에서 28일까지 양생한다. 양생 온도는 20도 전후로 유지한다. 양생이 부실하면 공시체 강도가 실제 구조물의 강도보다 낮게 나온다. 공시체는 시험 전날 수조에서 꺼내 표면의 물을 닦고, 시험기에서 중심을 맞춰 압축한다. 하중을 가하는 속도는 일정하게 유지하고, 파괴 하중을 기록해 단면적으로 나누어 압축강도를 계산한다.</p>
+  <p>공시체는 표준 양생을 해야 한다. 타설 후 하루 동안 현장에서 양생한 뒤 몰드를 탈형하고, 수조나 습도 95퍼센트 이상의 양생실에서 28일까지 양생한다. 양생 온도는 20도 전후로 유지한다. 양생이 부실하면 공시체 강도가 실제 구조물의 강도보다 낮게 나온다. 공시체는 시험 전날 수조에서 꺼내 표면의 물을 닦고, 시험기에서 중심을 맞춰 압축한다. 하중을 가하는 속도는 일정하게 유지하고, 파괴 하중을 기록해 단면적으로 나누어 압축강도를 계산한다. 공시체 상하면이 평평하지 않으면 편심 하중이 생겨 강도가 낮게 나오므로, 표면은 연마나 캡핑으로 평평하게 다듬어야 한다.</p>
+  <p>압축강도 판정은 28일 강도를 기준으로 한다. 3개의 공시체 평균값이 설계기준강도 이상이고, 개별값이 설계기준강도의 85퍼센트 이상이면 합격이다. 7일 강도는 조기 강도를 확인하는 참고값으로, 설계강도의 70퍼센트 정도가 나오면 28일 강도가 설계값을 만족할 가능성이 높다. 7일 강도가 낮으면 양생 상태를 점검하고, 28일 결과를 기다리며 추가 조치를 준비한다. 시험 결과는 시험 성적서로 발급받아 보관한다.</p>
+
+  <h2>불합격 판정과 대응 절차</h2>
+  <p>28일 압축강도가 설계기준강도에 미달하면 즉시 대응해야 한다. 먼저 시험 과정에 오류가 없었는지 확인한다. 공시체 제작과 양생, 시험기의 검정 상태, 하중 속도를 점검하고, 필요하면 예비 공시체로 재시험한다. 시험 오류가 아닌 것으로 확인되면 구조물에서 코어를 채취해 직접 강도를 확인한다. 코어 강도는 공시체 강도보다 낮게 나오는 경향이 있어, 코어 평균 강도가 설계강도의 85퍼센트 이상이면 합격으로 판정하는 경우가 많다.</p>
+  <p>코어 시험에서도 불합격이 나오면 구조 검토가 필요하다. 구조 기술자가 해당 부재의 하중과 강도를 다시 계산해 구조 안전성을 평가한다. 안전성이 확보되면 그대로 사용하고, 부족하면 보강을 실시한다. 보강 방법으로는 단면 증대, 강판 보강, 섬유 보강 등이 있으며, 부재의 종류와 강도 부족 정도에 따라 선택한다. 보강이 어려운 경우에는 해당 부위를 철거하고 다시 타설하기도 한다. 불합격 판정은 공사비와 공기에 큰 영향을 미치므로, 시험 단계에서 오류를 줄이는 것이 가장 중요하다.</p>
+  <p>시험 기록은 품질 관리의 증거다. 슬럼프 시험 결과, 공시체 제작 기록, 양생 기록, 압축강도 성적서를 타설 부위별로 정리해 보관한다. 기록이 있으면 강도 문제가 생겼을 때 원인을 추적할 수 있고, 레미콘 공장과 책임 소재를 가리는 근거가 된다. 시험을 의뢰하는 기관은 공인 시험기관을 이용하고, 시험 성적서는 원본으로 보관한다. 기록이 없는 현장은 시험을 한 것이나 다름없다.</p>
+
+  <h2>비파괴 시험의 활용</h2>
+  <p>압축강도 시험이 공시체나 코어를 파괴하는 시험이라면, 비파괴 시험은 구조물을 손상시키지 않고 강도를 추정하는 방법이다. 반발경도 시험은 콘크리트 표면을 해머로 타격해 반발도를 측정하는 방법으로, 현장에서 간편하게 사용할 수 있다. 초음파 속도법은 콘크리트 속을 통과하는 초음파의 속도로 내부의 균질성과 강도를 추정한다. 두 방법 모두 간접적인 추정치이므로, 압축강도 시험을 대신할 수는 없지만, 구조물 전체의 강도 분포를 파악하거나 의심 부위를 찾는 데 유용하다.</p>
+  <p>비파괴 시험은 코어 채취 위치를 정할 때도 활용된다. 구조물 전체에서 반발경도를 측정해 강도가 낮게 나오는 부위를 찾고, 그 부위에서 코어를 채취하면 시험의 정확도가 높아진다. 철근 탐사기를 이용해 철근의 위치와 피복두께를 확인하면, 코어 채취 시 철근을 피할 수 있고, 배근 상태를 간접적으로 확인할 수 있다. 비파괴 시험 결과는 절대값보다는 상대적인 비교에 의미가 크므로, 같은 장비와 방법으로 측정한 결과를 비교하고, 압축강도 시험 결과와 함께 종합적으로 판단해야 한다.</p>
+
+  <h2>강도 시험 단계별 절차</h2>
+  <ol>
+    <li><strong>슬럼프 시험을 실시한다.</strong> 차량마다 납품서를 확인하고, 중간 부분에서 시료를 채취해 슬럼프와 공기량을 시험한다. 기준을 벗어난 차량은 반품한다.</li>
+    <li><strong>공시체를 제작한다.</strong> 세 층으로 나누어 채우고 각 층을 25회씩 다지며, 표면을 마감하고 타설 부위와 날짜를 표시한다.</li>
+    <li><strong>공시체를 표준 양생한다.</strong> 하루 뒤 탈형하고 수조나 양생실에서 20도 전후로 28일까지 양생한다.</li>
+    <li><strong>7일 강도를 시험한다.</strong> 7일 재령에서 압축강도를 측정해 조기 강도를 확인하고, 28일 결과를 예측한다.</li>
+    <li><strong>28일 강도를 시험한다.</strong> 3개의 공시체 평균값과 개별값으로 설계기준강도 만족 여부를 판정한다.</li>
+    <li><strong>시험 성적서를 발급받는다.</strong> 공인 시험기관의 성적서를 원본으로 보관하고, 타설 기록과 함께 정리한다.</li>
+    <li><strong>불합격 시 재시험한다.</strong> 예비 공시체로 재시험하고, 그래도 미달이면 코어 채취 시험을 실시한다.</li>
+    <li><strong>구조 검토와 보강을 결정한다.</strong> 코어 시험에서도 미달이면 구조 기술자의 검토를 받아 보강 또는 철거 여부를 결정한다.</li>
+  </ol>
+
+  <h2>흔한 실수</h2>
+  <ul>
+    <li><strong>현장 가수:</strong> 슬럼프를 맞추기 위해 물을 추가하면 강도가 떨어진다. 불합격 차량은 반품해야 한다.</li>
+    <li><strong>공시체 제작 부실:</strong> 다짐이 부족하거나 양생이 부실하면 공시체 강도가 실제보다 낮게 나온다. 제작과 양생을 표준대로 해야 한다.</li>
+    <li><strong>시료 채취 오류:</strong> 차량의 처음이나 끝 부분에서 채취하면 시료가 대표성을 잃는다. 중간 부분에서 채취해야 한다.</li>
+    <li><strong>시험 시기 오류:</strong> 재령을 지키지 않고 시험하면 강도가 다르게 나온다. 7일과 28일 재령을 정확히 지켜야 한다.</li>
+    <li><strong>기록 누락:</strong> 시험 결과를 기록하지 않으면 나중에 원인을 찾을 수 없다. 타설 부위별로 기록을 정리해야 한다.</li>
+  </ul>
+
+  <h2>현장 실무 팁</h2>
+  <p>공시체는 타설 현장에서 직접 채취하는 것이 원칙이며, 공장에서 가져온 시료를 대신 사용해서는 안 된다. 채취할 때는 타설 중인 콘크리트의 중간 지점에서 떠서 몰드에 세 번에 나누어 채우고, 각 층마다 다짐봉으로 스물다섯 번씩 찔러 다짐한다. 몰드 겉면에 시멘트 페이스트가 묻으면 시험 결과에 영향을 주지 않지만, 몰드가 기울어진 상태로 굳으면 공시체 윗면이 평평하지 않아 압축시험에서 하중이 한쪽으로 쏠린다.</p>
+  <p>채취한 공시체는 이동할 때 진동을 주지 않도록 조심하고, 현장에서 하루 동안 양생한 뒤 시험실로 옮긴다. 운반 중에 몰드가 흔들리면 아직 굳지 않은 공시체에 균열이 생길 수 있다. 시험실에 도착한 공시체는 표준 양생수조에 넣어 20도 안팎의 물속에서 보관하며, 시험 당일에는 표면을 닦고 상하 면의 평탄도를 확인한다. 강도 기록은 차량 번호와 타설 구역, 슬럼프 값과 함께 정리해야 나중에 문제가 생겼을 때 원인을 찾을 수 있다.</p>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>슬럼프가 설계값보다 크면 어떻게 하나요?</h3>
+  <p>슬럼프가 기준 범위를 초과하면 물이 많거나 배합에 문제가 있을 수 있으므로 해당 차량은 반품하는 것이 원칙이다. 현장에서 슬럼프가 큰 콘크리트를 그대로 타설하면 강도가 떨어지고 재료 분리와 블리딩이 생긴다. 레미콘 공장에 통보하고 배합을 확인한 뒤 재반입을 요청한다.</p>
+  <h3>7일 강도가 낮으면 28일 강도도 낮게 나오나요?</h3>
+  <p>7일 강도가 설계강도의 70퍼센트에 미치지 못하면 28일 강도도 설계값에 미달할 가능성이 높다. 이럴 때는 양생 상태를 점검하고, 예비 공시체의 강도 추이를 지켜보며, 28일 결과에 대비해 코어 시험과 구조 검토를 준비한다. 7일 강도는 조기 경보의 역할을 한다.</p>
+  <h3>공시체 강도와 실제 구조물 강도는 같은가요?</h3>
+  <p>공시체는 표준 양생을 하므로 현장에서 양생된 구조물의 강도와 다를 수 있다. 구조물의 실제 강도를 확인하려면 코어를 채취해 시험해야 한다. 공시체 강도는 품질 관리의 기준이며, 구조물 강도를 직접 나타내는 것은 아니다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 압축 시험기를 사용할 때는 시험편이 파괴되면서 파편이 튈 수 있으므로 보호 덮개를 사용하고, 시험 중에는 시험기 앞에 서지 않는다. 코어 채취 작업에서는 드릴의 회전부에 손이 닿지 않도록 주의하고, 분진을 마시지 않도록 마스크를 착용한다. 시험용 콘크리트 시료는 피부에 닿으면 자극을 주므로 장갑을 착용한다.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-mix">콘크리트 배합비 계산기</a> — 설계기준강도별 배합과 재료량을 확인합니다</li>
+      <li><a href="../index.html#calc-volume">콘크리트 소요량 계산기</a> — 타설 체적과 공시체 채취량을 계획합니다</li>
+      <li><a href="../index.html#calc-cost">타설 비용 산정 계산기</a> — 타설 비용과 시험 비용을 함께 산정합니다</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>건축콘크리트 허브</h4>
+        <p>무료 콘크리트 계산기와 실무 가이드를 제공하는 사이트입니다. KS F 4009 · KCS 기준 · 60Hz.</p>
+        <p style="margin-top:8px">concretecalc.github.io/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-volume">콘크리트 소요량</a></li>
+          <li><a href="../index.html#calc-rebar">철근 중량</a></li>
+          <li><a href="../index.html#calc-formwork">거푸집 면적</a></li>
+          <li><a href="../index.html#calc-mix">콘크리트 배합비</a></li>
+          <li><a href="../index.html#calc-cost">타설 비용 산정</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="concrete-pouring-basics.html">콘크리트 타설의 기초</a></li>
+          <li><a href="curing-management.html">콘크리트 양생 관리</a></li>
+          <li><a href="crack-prevention.html">콘크리트 균열 원인과 대책</a></li>
+          <li><a href="rebar-placement.html">철근 배근 실무</a></li>
+          <li><a href="formwork-construction.html">거푸집 시공 실무</a></li>
+          <li><a href="concrete-strength-test.html">콘크리트 강도 시험</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 건축콘크리트 허브 · 모든 계산은 브라우저 안에서 수행됩니다 · 결과는 추정치이므로 설계도서와 기준에 따라 확인하세요.</div>
+  </div>
+</footer>
+
+</body>
+</html>

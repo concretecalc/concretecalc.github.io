@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>거푸집 시공 실무 — 건축콘크리트 허브</title>
+<meta name="description" content="거푸집 시공 실무: 유로폼과 합판 거푸집 조립, 수직도와 수평도 관리, 동바리 설치, 존치 기간과 해체 순서를 현장 기준으로 설명합니다.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<style>
+:root{--navy:#0f172a;--navy2:#1e293b;--amber:#f59e0b;--amber-dark:#d97706;--amber-bg:#fef3c7;--bg:#f1f5f9;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--green:#15803d;--green-bg:#dcfce7;--red:#b91c1c;--red-bg:#fee2e2;--radius:14px;--shadow:0 1px 3px rgba(15,23,42,.08),0 4px 14px rgba(15,23,42,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+a{color:var(--amber-dark)}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.header-in{display:flex;align-items:center;gap:14px;padding:13px 16px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:1;min-width:200px}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--amber);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;flex:none}
+.brand b{font-size:19px;letter-spacing:.2px}
+.brand b span{color:var(--amber)}
+.brand small{display:block;font-size:11.5px;color:#94a3b8;font-weight:400}
+nav.main-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav.main-nav a{color:#cbd5e1;text-decoration:none;font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px}
+nav.main-nav a:hover{background:var(--navy2);color:#fff}
+.article{padding:26px 0 12px}
+.back{margin-bottom:10px}
+.back a{font-weight:700;text-decoration:none}
+.back a:hover{text-decoration:underline}
+.crumb{font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--amber-dark);margin-bottom:6px}
+.article h1{font-size:clamp(26px,4.5vw,34px);line-height:1.25;margin-bottom:10px}
+.lede{font-size:17px;color:#334155;margin-bottom:22px}
+.article h2{font-size:21px;margin:28px 0 8px;padding-top:6px;border-top:2px solid var(--amber);display:inline-block}
+.article h3{font-size:17px;margin:18px 0 6px}
+.article p{font-size:15.5px;color:#1e293b;margin-bottom:12px}
+.article ul,.article ol{margin:0 0 14px 22px;font-size:15.5px;color:#1e293b}
+.article li{margin-bottom:6px}
+.article table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0 16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.article th{background:var(--navy);color:#fff;text-align:left;padding:10px 12px}
+.article td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.article tr:nth-child(even) td{background:#f8fafc}
+.formula{font-size:13.5px;color:var(--muted);background:#fff;border:1px dashed var(--border);border-radius:8px;padding:10px 12px;margin:12px 0}
+.formula code{color:var(--navy);font-weight:600}
+.safety{background:var(--red-bg);border-left:4px solid var(--red);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:14.5px;color:#7f1d1d}
+.related{background:var(--amber-bg);border:1px solid #fde68a;border-radius:12px;padding:16px 18px;margin:22px 0}
+.related h3{font-size:15px;margin:0 0 8px}
+.related ul{margin:0 0 0 20px}
+.related li{margin-bottom:4px}
+footer{background:var(--navy);color:#94a3b8;margin-top:44px;padding:30px 0 26px}
+footer .cols{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer p,footer a{font-size:13.5px;color:#94a3b8;text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{margin-bottom:6px}
+.copy{border-top:1px solid #1e293b;margin-top:22px;padding-top:16px;font-size:12.5px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-in">
+    <a class="brand" href="../index.html"><span class="mark">건</span><span><b>건축콘크리트 <span>허브</span></b><small>concretecalc.github.io/</small></span></a>
+    <nav class="main-nav">
+      <a href="../index.html#calculators">계산기</a>
+      <a href="../index.html#reference">배합표</a>
+      <a href="../index.html#guides">가이드</a>
+      <a href="../index.html#faq">자주 묻는 질문</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap article">
+  <p class="back"><a href="../index.html">&larr; 건축콘크리트 허브로 돌아가기</a></p>
+  <p class="crumb">가이드 / 거푸집</p>
+  <h1>거푸집 시공 실무</h1>
+  <p class="lede">거푸집은 콘크리트의 틀이다. 콘크리트가 굳을 때까지 형상을 유지하고, 표면의 품질을 결정하며, 시공 하중을 지탱하는 임시 구조물이다. 거푸집이 조금만 틀어져도 벽이 기울고 슬래브가 처지며, 콘크리트 표면에 결함이 생긴다. 거푸집 공사는 목재와 강재를 다루는 단순한 작업처럼 보이지만, 치수와 수직도, 지지 구조와 해체 시기까지 정밀하게 관리해야 하는 전문 작업이다.</p>
+
+  <h2>거푸집의 종류와 선택</h2>
+  <p>유로폼은 강재 프레임에 합판을 붙인 시스템 거푸집으로, 조립과 해체가 빠르고 재사용이 쉬워 벽체와 기둥, 슬래브에 널리 사용된다. 규격화된 패널을 조합하므로 치수 관리가 쉽고, 표면이 균일하게 나온다. 합판 거푸집은 목재 장선과 합판을 현장에서 재단해 조립하는 방식으로, 비정형 부위나 유로폼으로 맞추기 어려운 부분에 사용한다. 자유도가 높지만 작업자의 숙련도에 따라 품질이 달라진다. 알루미늄 폼은 가볍고 정밀도가 높아 반복되는 공동주택 층에 사용되며, 초기 비용은 높지만 공기 단축 효과가 크다.</p>
+  <p>거푸집 자재를 선택할 때는 부재의 형상과 반복 횟수, 표면 품질 요구 수준, 공기, 비용을 함께 고려한다. 같은 부재가 여러 층 반복되면 시스템 거푸집이 유리하고, 형상이 복잡한 부재에서는 합판 거푸집이 유리하다. 거푸집 표면에는 박리제를 도포해 콘크리트와 거푸집이 붙지 않도록 한다. 박리제를 바르지 않으면 해체할 때 콘크리트 표면이 떨어져 나가고, 거푸집도 손상된다. 박리제는 철근에 묻지 않도록 주의하고, 균일하게 얇게 도포해야 한다.</p>
+  <p>거푸집 설계에서는 콘크리트의 측압을 고려해야 한다. 굳지 않은 콘크리트는 액체처럼 거푸집에 측압을 가하며, 타설 속도가 빠르거나 타설 높이가 클수록 측압이 커진다. 측압을 견디지 못하면 거푸집이 벌어지거나 터져 콘크리트가 새어 나온다. 거푸집의 강도와 타이볼트 간격, 동바리 배치를 설계하중으로 검토하고, 현장에서는 설계와 다르게 임의로 간격을 넓히지 않아야 한다. 거푸집은 임시 구조물이지만, 그 안전성은 본 구조물만큼 중요하다.</p>
+
+  <h2>부재별 거푸집 기준</h2>
+  <table>
+    <tr><th>부재</th><th>거푸집 종류</th><th>존치 기간 (일반)</th><th>점검 항목</th></tr>
+    <tr><td>기둥·벽체 측면</td><td>유로폼, 합판</td><td>3일 이상</td><td>수직도, 타이볼트 간격</td></tr>
+    <tr><td>슬래브 하면</td><td>유로폼, 합판</td><td>7일 이상</td><td>수평도, 처짐</td></tr>
+    <tr><td>보 하면</td><td>유로폼, 합판</td><td>7일 이상</td><td>수평도, 동바리</td></tr>
+    <tr><td>보 측면</td><td>유로폼, 합판</td><td>3일 이상</td><td>수직도, 이음부 틈</td></tr>
+    <tr><td>기초</td><td>합판, 유로폼</td><td>3일 이상</td><td>치수, 매립물 위치</td></tr>
+  </table>
+
+  <h2>조립과 수직도·수평도 관리</h2>
+  <p>거푸집 조립은 먹줄을 놓는 것부터 시작한다. 기준선을 확인하고 거푸집의 위치를 표시한 뒤, 패널을 조립한다. 벽체 거푸집은 양면을 세우고 타이볼트로 연결하며, 수직도를 추나 레이저로 확인한다. 수직도가 틀어지면 벽이 기울어지고, 상부 층의 치수가 맞지 않는다. 슬래브 거푸집은 동바리를 세우고 멍에와 장선을 올린 뒤 합판을 깐다. 동바리는 수직으로 세우고, 바닥이 침하하지 않도록 받침판을 깐다. 동바리 간격이 넓으면 슬래브가 처지므로 설계 간격을 지켜야 한다.</p>
+  <p>조립이 끝나면 치수와 수직도, 수평도를 실측한다. 기둥과 벽체는 네 면의 수직도를 확인하고, 보와 슬래브는 레벨기로 수평도를 확인한다. 거푸집 이음부에 틈이 있으면 시멘트 페이스트가 빠져나가 표면에 공극이 생기므로, 틈은 폼 테이프나 실란트로 메운다. 철근 배근이 끝난 뒤에는 거푸집 내부에 이물질이 남아 있지 않은지 다시 확인하고, 피복두께를 위한 스페이서가 제자리에 있는지 점검한다. 검측을 받기 전에 거푸집 자체의 검측 항목을 먼저 확인하는 것이 좋다.</p>
+  <p>조립이 끝나면 치수와 수직도, 수평도를 실측한다. 기둥과 벽체는 네 면의 수직도를 확인하고, 보와 슬래브는 레벨기로 수평도를 확인한다. 거푸집 이음부에 틈이 있으면 시멘트 페이스트가 빠져나가 표면에 공극이 생기므로, 틈은 폼 테이프나 실란트로 메운다. 철근 배근이 끝난 뒤에는 거푸집 내부에 이물질이 남아 있지 않은지 다시 확인하고, 피복두께를 위한 스페이서가 제자리에 있는지 점검한다. 검측을 받기 전에 거푸집 자체의 검측 항목을 먼저 확인하는 것이 좋다. 수직도 오차는 상부 층으로 갈수록 누적되므로, 매 층마다 기준선을 다시 확인하는 습관이 중요하다.</p>
+  <p>타설 중에는 거푸집의 변형을 계속 관찰한다. 콘크리트의 측압으로 거푸집이 벌어지거나 동바리가 침하하면 즉시 타설을 멈추고 보강해야 한다. 타설 속도를 조절해 측압이 과도해지지 않도록 하고, 한쪽에만 콘크리트를 집중적으로 붓지 않는다. 거푸집이 터지면 콘크리트가 새어 나와 품질이 떨어질 뿐 아니라 작업자의 안전도 위협받는다. 타설 중 거푸집을 지키는 인원을 별도로 두어 변형을 감시하는 것이 안전하다.</p>
+
+  <h2>동바리 설치와 해체 순서</h2>
+  <p>동바리는 슬래브와 보의 하중을 지탱하는 지지 구조물이다. 동바리는 수직으로 세우고, 상하 받침판을 설치하며, 수평 버팀대로 연결해 넘어지지 않도록 한다. 동바리 바닥이 흙이나 약한 지반이면 침하가 생기므로, 받침판을 깔고 다짐을 한다. 동바리 간격은 거푸집 설계에 따라 정해지며, 임의로 넓히면 슬래브가 처진다. 동바리는 타설 전과 타설 중에 수직 상태를 확인하고, 침하가 보이면 즉시 보강한다.</p>
+  <p>거푸집 해체는 콘크리트가 충분한 강도에 도달한 뒤에 한다. 측면 거푸집은 콘크리트 표면이 손상되지 않을 강도가 되면 해체할 수 있으며, 일반적으로 3일 이상 존치한다. 하면 거푸집과 동바리는 슬래브가 자중을 견딜 수 있는 강도에 도달한 뒤 해체하며, 일반적으로 7일 이상 존치한다. 상부 층의 타설 하중이 아래층 슬래브에 전달되므로, 동바리는 아래층까지 존치하는 경우가 많다. 해체 시기는 기온과 콘크리트 강도에 따라 달라지므로, 압축강도 시험 결과로 확인하는 것이 정확하다.</p>
+  <p>해체 순서는 조립의 역순으로, 하중을 받는 부분부터 천천히 해제한다. 동바리를 한꺼번에 제거하면 슬래브가 갑자기 처지므로, 단계적으로 해체한다. 해체한 거푸집은 콘크리트 표면을 긁지 않도록 조심스럽게 떼어내고, 재사용할 거푸집은 청소하고 박리제를 다시 도포해 보관한다. 손상된 패널은 수리하거나 폐기하고, 다음 층에 그대로 사용하지 않는다. 해체 후에는 콘크리트 표면의 결함을 확인하고, 공극이나 균열이 있으면 보수 계획을 세운다.</p>
+
+  <h2>거푸집 재사용과 보관</h2>
+  <p>거푸집은 한 번 쓰고 버리는 자재가 아니라, 잘 관리하면 여러 번 재사용할 수 있는 자산이다. 유로폼은 10회 이상 재사용하는 것이 일반적이며, 합판 거푸집도 표면 상태가 양호하면 여러 번 사용할 수 있다. 재사용 횟수를 늘리려면 해체할 때 거푸집을 무리하게 뜯지 않고, 콘크리트 표면에 붙은 모르타르를 깨끗이 제거해야 한다. 패널이 휘거나 모서리가 손상되면 치수가 맞지 않으므로, 손상된 패널은 수리하거나 폐기한다. 재사용 전에 패널의 평탄도를 확인하고, 박리제를 다시 도포한다.</p>
+  <p>보관은 재사용 횟수를 결정하는 또 하나의 요소다. 거푸집은 비를 맞지 않는 곳에 평평하게 쌓아 보관하고, 습기가 많은 지면에 직접 닿지 않도록 받침을 깐다. 합판은 습기를 머금으면 뒤틀리므로 건조한 장소에 보관해야 한다. 자재를 부재별로 정리해 표시해 두면 다음 층의 조립이 빨라지고, 자재 분실도 줄어든다. 거푸집 자재의 관리 상태를 기록으로 남기면 재사용 횟수와 교체 시기를 판단할 수 있고, 거푸집 비용을 정확히 파악할 수 있다. 거푸집 관리는 결국 공사비 관리와 직결된다.</p>
+
+  <h2>거푸집 시공 단계별 절차</h2>
+  <ol>
+    <li><strong>기준선을 확인한다.</strong> 먹줄과 레벨을 이용해 거푸집의 위치와 높이를 표시하고, 도면 치수와 대조한다.</li>
+    <li><strong>동바리와 지지 구조를 설치한다.</strong> 동바리를 수직으로 세우고 받침판을 깔며, 수평 버팀대로 연결한다.</li>
+    <li><strong>거푸집 패널을 조립한다.</strong> 벽체는 양면을 세우고 타이볼트로 연결하며, 슬래브는 장선 위에 합판을 깐다.</li>
+    <li><strong>수직도와 수평도를 실측한다.</strong> 추와 레벨기로 수직도와 수평도를 확인하고, 틀어진 곳은 수정한다.</li>
+    <li><strong>이음부 틈을 메우고 박리제를 도포한다.</strong> 틈은 테이프로 메우고, 거푸집 표면에 박리제를 균일하게 바른다.</li>
+    <li><strong>철근 배근 후 검측을 받는다.</strong> 배근이 끝난 뒤 거푸집 치수와 피복두께를 다시 확인하고 감리자의 검측을 받는다.</li>
+    <li><strong>타설 중 변형을 감시한다.</strong> 타설 중 거푸집의 벌어짐과 동바리 침하를 관찰하고, 이상이 있으면 즉시 보강한다.</li>
+    <li><strong>강도를 확인한 뒤 순서대로 해체한다.</strong> 압축강도를 확인한 뒤 측면부터 하면, 동바리 순으로 단계적으로 해체한다.</li>
+  </ol>
+
+  <h2>흔한 실수</h2>
+  <ul>
+    <li><strong>동바리 간격 과다:</strong> 동바리를 듬성듬성 세우면 슬래브가 처진다. 설계 간격을 반드시 지켜야 한다.</li>
+    <li><strong>이음부 틈 방치:</strong> 틈에서 페이스트가 새면 표면에 공극이 생긴다. 타설 전에 틈을 모두 메워야 한다.</li>
+    <li><strong>박리제 누락:</strong> 박리제를 바르지 않으면 해체할 때 표면이 떨어져 나간다. 철근에 묻지 않게 균일하게 도포한다.</li>
+    <li><strong>조기 해체:</strong> 강도가 오르기 전에 거푸집을 해체하면 처짐과 균열이 생긴다. 존치 기간을 지켜야 한다.</li>
+    <li><strong>동바리 일괄 해체:</strong> 동바리를 한꺼번에 제거하면 슬래브가 갑자기 처진다. 단계적으로 해체해야 한다.</li>
+  </ul>
+
+  <h2>현장 실무 팁</h2>
+  <p>거푸집을 해체할 때는 순서가 중요하다. 측판부터 먼저 떼고, 바닥판과 동바리는 강도를 확인한 뒤에 해체한다. 해체할 때 망치로 거푸집을 두드리면 표면에 상처가 생기므로, 전용 공구를 사용해 이음부부터 조심스럽게 분리한다. 해체한 거푸집은 곧바로 정리해서 박리제를 다시 바르고, 휘거나 손상된 부재는 골라내야 다음에 재사용할 때 표면 품질이 유지된다.</p>
+  <p>박리제는 타설 전에 얇고 균일하게 발라야 한다. 너무 많이 바르면 콘크리트 표면에 얼룩이 생기고, 너무 적게 바르면 거푸집이 달라붙어 해체가 어려워진다. 비가 오는 날에는 박리제가 씻겨 나갈 수 있으므로, 타설 직전에 다시 확인하고 필요하면 덧칠한다. 유로폼이나 합판은 직사광선과 빗물에 오래 노출되면 뒤틀리므로, 사용하지 않을 때는 평평한 곳에 쌓아 덮개를 씌워 보관한다.</p>
+  <p>거푸집의 변형은 타설 전에 육안으로 확인한다. 합판이 부풀어 있거나 유로폼 프레임이 휘어 있으면 표면이 울퉁불퉁해지고, 이음부가 벌어지면 페이스트가 새어 나와 곰보가 생긴다. 타설 중에는 거푸집이 벌어지거나 동바리가 움직이는지 수시로 살펴야 하며, 이상이 보이면 즉시 타설을 멈추고 보강한다.</p>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>거푸집 해체 후 표면에 공극이 많으면 어떻게 하나요?</h3>
+  <p>공극은 다짐 부족이나 이음부 틈에서 페이스트가 빠져나갔을 때 생긴다. 작은 공극은 모르타르로 메워 보수할 수 있지만, 공극이 넓고 깊으면 구조 기술자의 검토가 필요하다. 다음 타설에서는 다짐과 이음부 처리를 개선해야 한다.</p>
+  <h3>동바리를 얼마나 오래 두어야 하나요?</h3>
+  <p>슬래브와 보의 동바리는 일반적으로 7일 이상 존치하며, 상부 층의 타설 하중까지 고려해 더 오래 두는 경우도 있다. 정확한 해체 시기는 압축강도 시험 결과로 판단하는 것이 좋다. 기온이 낮은 겨울철에는 존치 기간이 더 길어진다.</p>
+  <h3>유로폼과 합판 거푸집 중 어느 것이 좋은가요?</h3>
+  <p>반복되는 부재에서는 조립이 빠르고 표면이 균일한 유로폼이 유리하고, 형상이 복잡한 부재에서는 자유도가 높은 합판 거푸집이 유리하다. 부재의 형상과 반복 횟수, 표면 품질 요구 수준에 따라 선택해야 한다.</p>
+
+  <div class="safety"><strong>안전 수칙:</strong> 거푸집 작업은 추락과 붕괴 위험이 큰 작업이다. 동바리 위에서는 안전난간과 안전대를 사용하고, 거푸집 해체 시에는 아래에 사람이 들어가지 않도록 통제한다. 동바리가 넘어지지 않도록 수평 버팀대를 설치하고, 타설 중에는 거푸집 변형을 감시하는 인원을 둔다.</div>
+
+  <div class="related">
+    <h3>관련 계산기</h3>
+    <ul>
+      <li><a href="../index.html#calc-formwork">거푸집 면적 계산기</a> — 거푸집 면적과 합판 매수를 계산합니다</li>
+      <li><a href="../index.html#calc-volume">콘크리트 소요량 계산기</a> — 타설 체적과 주문량을 계산합니다</li>
+      <li><a href="../index.html#calc-cost">타설 비용 산정 계산기</a> — 거푸집과 타설 비용을 함께 산정합니다</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>건축콘크리트 허브</h4>
+        <p>무료 콘크리트 계산기와 실무 가이드를 제공하는 사이트입니다. KS F 4009 · KCS 기준 · 60Hz.</p>
+        <p style="margin-top:8px">concretecalc.github.io/</p>
+      </div>
+      <div>
+        <h4>계산기</h4>
+        <ul>
+          <li><a href="../index.html#calc-volume">콘크리트 소요량</a></li>
+          <li><a href="../index.html#calc-rebar">철근 중량</a></li>
+          <li><a href="../index.html#calc-formwork">거푸집 면적</a></li>
+          <li><a href="../index.html#calc-mix">콘크리트 배합비</a></li>
+          <li><a href="../index.html#calc-cost">타설 비용 산정</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>가이드</h4>
+        <ul>
+          <li><a href="concrete-pouring-basics.html">콘크리트 타설의 기초</a></li>
+          <li><a href="curing-management.html">콘크리트 양생 관리</a></li>
+          <li><a href="crack-prevention.html">콘크리트 균열 원인과 대책</a></li>
+          <li><a href="rebar-placement.html">철근 배근 실무</a></li>
+          <li><a href="formwork-construction.html">거푸집 시공 실무</a></li>
+          <li><a href="concrete-strength-test.html">콘크리트 강도 시험</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 건축콘크리트 허브 · 모든 계산은 브라우저 안에서 수행됩니다 · 결과는 추정치이므로 설계도서와 기준에 따라 확인하세요.</div>
+  </div>
+</footer>
+
+</body>
+</html>
